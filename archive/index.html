@@ -1,0 +1,231 @@
+<!DOCTYPE HTML PUBLIC "-//W3C/DTD HTML 4.01 Frameset//EN"
+                      "http://www.w3.org/TR/html4/frameset.dtd">
+<HTML>
+<HEAD>
+<TITLE> ISAAC </TITLE>
+<META NAME="KEYWORDS" CONTENT="CFD fluid numerical aerospace engineering">
+<META NAME="DESCRIPTION" CONTENT="This document provides a description of
+            the ISAAC computational fluid dynamics code.">
+</HEAD>
+
+<!BODY BGCOLOR="#3366BB" TEXT="#FFFFFF">
+<BODY BGCOLOR="#FFFFFF">
+
+<H1 ALIGN="center"><B>ISAAC</B></H1>
+<P>
+</P>
+
+<TABLE WIDTH=100% CELLSPACING=0 CELLPADDING=0 BORDER=0 BGCOLOR="#FFFFFF">
+<TD WIDTH=225 VALIGN="TOP">
+<!--- Navigation --->
+<table width=205 cellspacing=0 cellpadding=0 border=0 BGCOLOR="#6699EE">
+<tr bgcolor="#6699EE">
+<th height=40><font color="#FFFFFF">Navigation</font></th>
+<tr><td height=40><a href="license.html"> ISAAC Public Source License </a></td></tr>
+<tr><td height=40><a href="download.html"> Download Current Version </a></td></tr>
+<tr><td height=40><a href="man.ps"> User's Guide (Postscript, 7.9MB)</a></td></tr>
+<tr><td height=40><a href="man.pdf"> User's Guide (PDF, 2.3MB)</a></td></tr>
+<tr><td height=40><a href="http://sourceforge.net/projects/isaac-cfd"> ISAAC on SourceForge</a></td></tr>
+</table>
+
+</TD>
+
+<!--- Content --->
+<TD>
+<BGCOLOR="#FFFFFF">
+<H2 ALIGN="left"><B>What is ISAAC?</B></H2>
+<P>
+ISAAC (Integrated Solution Algorithm for Arbitrary Configurations) 
+is a compressible Euler/Navier-Stokes computational fluid dynamics code.
+ISAAC includes the capability of calculating the Euler equations
+for inviscid flow or the Navier-Stokes equations for viscous flows.
+ISAAC uses a domain decomposition structure to accomodate complex
+physical configurations.
+ISAAC can calculate either steady-state or time dependent flow.
+</P>
+<P>
+ISAAC was designed to test turbulence models.
+Various two equation turbulence models, 
+explicit algebraic Reynolds stress models,
+and full differential Reynolds stress models are implemented in ISAAC.
+Several test cases are documented in the User's Guide.
+</P>
+
+<H2 ALIGN="left"><B>License</B></H2>
+<P>
+ISAAC was developed under contract to the NASA Langley Research Center
+while the author was employed by Analytical Services and Materials, Inc.
+ISAAC is made available WITH NO WARRANTY under the terms of the
+<A HREF="license.html">ISAAC Public Source License</A>.
+</P>
+
+<H2 ALIGN="left"><B>Publications using ISAAC</B></H2>
+<P>
+The following is a list of several publications using the ISAAC code.
+<OL>
+<LI> Morrison, J. H.,
+        <Q>Flux Difference Split Scheme for Turbulent Transport Equations,</Q>
+        AIAA Paper 90-5251, October 1990.
+</LI>
+
+<LI> Morrison, J. H., 
+        <Q>A Compressible Navier-Stokes Solver with Two-Equation and 
+        Reynolds Stress Turbulence Closure Models,</Q> 
+        NASA CR-4440, May 1992.
+</LI>
+
+<LI> Morrison, J. H. and Korte, J. J.,
+        <Q>Implementation of Vigneron's Streamwise Pressure Gradient
+        Approximation in Parabolized Navier-Stokes Equations,</Q>
+        <I> AIAA Journal</I>, Vol. 30, No. 12, November 1992.
+</LI>
+
+<LI> Morrison, J. H., Gatski, T. B., Sommer, T. P., 
+                     Zhang, H. S., and So, R. M. C.,
+        <Q>Evaluation of a Near-Wall Turbulent Closure Model in Predicting
+        Compressible Ramp Flows,</Q>
+        <I> Near-Wall Turbulent Flows</I>,
+        Eds. R. M. C. So, C. G. Speziale, and B. E. Launder,
+        Elsevier Science Publishers B.V., 1993.
+</LI>
+
+<LI> Chenault, C. F.,
+        <Q>Development and Implementation of a Scramjet Cycle Analysis Code 
+           With a Finite-Rate-Chemistry Combustion Model For Use on 
+           A Personal Computer,</Q> 
+         Masters Thesis, Air Force Institute of Technology, 
+         December 1993. AFIT/GAE/ENY/93D-7
+</LI>
+
+<LI> Abid, R., Gatski, T. B., and Morrison, J. H.,
+        <Q>Assessment of Pressure-Strain Models in Predicting Compressible,
+        Turbulent Ramp Flows,</Q>
+        <I> AIAA Journal</I>, Vol. 33, No. 1, January 1995.
+</LI>
+
+<LI> Vahala, G., Vahala, L., Morrison, J., Krasheninnikov, S., and Sigmar, D.,
+        <Q>Effects of Neutral Three-Dimensional Turbulence in the Gas
+           Blanket Regime for Divertors,</Q>
+        <I>Physics Letters A</I>, Vol. 205, 1995, pp. 266-273.
+</LI>
+
+<LI> Vahala, G., Vahala, L., Morrison, J., Krasheninnikov, S., and Sigmar, D.,
+        <Q>Toroidal Wall Heat Flux and Conductivity Profiles Due to Neutral
+           3D Turbulence in the Gas Blanket Regime for Divertors,</Q>
+        <I>Contrib. Plasma Phys.</I>, Vol. 36, No. 2/3, 1996, pp. 304-308.
+</LI>
+
+<LI> Gatski, T. B.,
+        <Q>Prediction of Airfoil Characteristics with Higher Order
+           Turbulence Models,</Q>
+           NASA Technical Memorandum 110246, April, 1996.
+     <a href="http://techreports.larc.nasa.gov/ltrs/dublincore/1996/NASA-96-tm110246.html"> Abstract </a>  |
+     <a href="http://techreports.larc.nasa.gov/ltrs/PDF/NASA-96-tm110246.pdf"> PDF </a>  |
+     <a href="ftp://techreports.larc.nasa.gov/pub/techreports/larc/96/NASA-96-tm110246.ps.Z"> Postscript </a> 
+</LI>
+
+<LI> Gatski, T. B.,
+        <Q>Airfoil Stall Prediction Using a Two-Equation and an
+           Explicit Algebraic Stress Model,</Q>
+        <I>Advances in Turbulence VI,</I> 
+           Eds. Gavrilakis, S., Machiels, L., and Monkewitz, P. A.,
+           Kluwer Academic Publishers, 1996.
+</LI>
+
+<LI> Ristorcelli, J. R. and Morrison, J. H.,
+        <Q>The Favre-Reynolds Average Distinction and a Consistent
+           Gradient Transport Expression for the Dissipation,</Q>
+        <I>Physics of Fluids,</I> Vol. 8, No. 9, September 1996.
+</LI>
+
+<LI> Abid, R., Morrison, J. H., Gatski, T. B., 
+                     and Speziale, C. G.,
+        <Q>Prediction of Aerodynamic Flows with a New Explicit Algebraic
+        Stress Model,</Q>
+        <I> AIAA Journal</I>, Vol. 34, No. 12, December 1996.
+</LI>
+        
+<LI> Vahala, G., Vahala, L., Morrison, J., Krasheninnikov, S., and Sigmar, D.,
+        <Q>K-e Compressible 3D Neutral Fluid Turbulence Modelling
+           of the Effect of Toroidal Cavities on Flame-Front Propagation
+           in the Gas-Blanket Regime for Tokamak Divertors,</Q>
+        <I>J. Plasma Physics</I>, Vol. 57, Part 1, 1997, pp. 155-173.
+</LI>
+
+<LI> Woodruff, S. L., Morrison, J. H., and Hussaini, M. Y.,
+        <Q>Evaluation of Several Turbulence Models in a Multiple-Element
+           Airfoil Computation,</Q>
+         AIAA Paper 98-0327, January 1998.
+</LI>
+
+<LI> Chenault, C. F.,
+        <Q>Analysis of Turbulence Models as Applied to Two- and 
+           Three-Dimensional Injection Flows,</Q>
+        Ph.D. Dissertation, Air Force Institute of Technology, 
+        March 1998. AFIT/DS/ENY/98M-01
+</LI>
+
+<LI> Chenault, C. F., Beran, P. S., and Bowersox, R. D. W.,
+        <Q>Second-Order Reynolds Stress Turbulence Modeling of 
+           Three-Dimensional Oblique Supersonic Injection,</Q>
+        AIAA Paper 98-3425, July 1998.
+</LI>
+
+<LI> Chenault, C. F. and Beran, P. S., 
+        <Q>K-Epsilon and Reynolds Stress Turbulence Model Comparisons 
+           for Two-Dimensional Injection Flows,</Q>
+        <I>AIAA Journal</I>, Vol. 36, No. 8, pp. 1401-1412, August 1998.
+</LI>
+
+<LI> Morrison, J. H.,
+        <Q>Numerical Study of Turbulence Model Predictions for the
+          MD 30P/30N and the NHLP-2D Three-Element Highlift Configurations,</Q>
+        NASA CR-1998-208967, December 1998.
+     <a href="http://techreports.larc.nasa.gov/ltrs/dublincore/98/cr/NASA-98-cr208967.html"> Abstract </a>  |
+     <a href="http://techreports.larc.nasa.gov/ltrs/PDF/1998/cr/NASA-98-cr208967.pdf"> PDF </a>  |
+     <a href="ftp://techreports.larc.nasa.gov/pub/techreports/larc/1998/cr/NASA-98-cr208967.ps.Z"> Postscript </a>
+</LI>
+
+<LI> Chenault, C. F., Beran, P. S., and Bowersox, R. D. W.,
+        <Q>Numerical Investigation of Supersonic Injection Using a
+        Reynolds-Stress Turbulence Model,</Q>
+        <I> AIAA Journal</I>, Vol. 37, No. 10, October 1999.
+</LI>
+        
+<LI> Woodruff, S. L., Seiner, J. M., Hussaini, M. Y., and Erlebacher, G.,
+        <Q>Evaluation of Turbulence-Model Performance in Jet Flows,</Q>
+        <I> AIAA Journal</I>, Vol. 39, No. 12, December 2001.
+</LI>
+
+<LI> Morrison, J. H., Panaras, A. G., Gatski, T. B., 
+     and Georgantopoulos, G. A.,
+        <Q>Analysis of Extensive Cross-Flow Separation using Higher-Order
+           RANS Closure Models,</Q>
+        AIAA Paper 2003-3532, June 2003.
+     <a href="http://techreports.larc.nasa.gov/ltrs/refer/2003/aiaa/NASA-aiaa-2003-3532.refer.html"> Abstract </a>  |
+     <a href="http://techreports.larc.nasa.gov/ltrs/PDF/2003/aiaa/NASA-aiaa-2003-3532.pdf"> PDF </a>  |
+     <a href="ftp://techreports.larc.nasa.gov/pub/techreports/larc/2003/aiaa/NASA-aiaa-2003-3532.ps.gz"> Postscript </a> 
+</LI>
+
+<LI> Poroseva, S. V., Hussaini, M. Y., and Woodruff, S. L.,
+        <Q>On Improving the Predictive Capability of Turbulence Models Using 
+           Evidence Theory,</Q>
+        AIAA Paper 2005-1096, January 2005.
+</LI>
+        
+</OL>
+</P>
+
+</TD>
+
+</TABLE>
+
+
+<P ALIGN="center">
+<A href="http://sourceforge.net"><IMG src="http://sourceforge.net/sflogo.php?group_id=38320&amp;type=3" width="125" height="37" border="0" alt="SourceForge.net Logo"></A>
+</P>
+
+<P ALIGN="center"><FONT SIZE="1">Copyright &copy;2001-2005 Joseph H. Morrison</FONT></P>
+
+</BODY>
+</HTML>
