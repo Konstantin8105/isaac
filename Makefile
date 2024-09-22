@@ -9,3 +9,6 @@ build:
 	cd src; make -f makefile
 	mv ./src/isaac .
 	rm -rf ./src
+
+# ./archive/example_cases/Klebanoff/Results
+# ../../../../isaac < asm.dat
