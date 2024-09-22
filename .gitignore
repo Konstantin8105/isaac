@@ -27,3 +27,4 @@ go.work.sum
 isaac
 ./src/
 naca0012*
+*.out
